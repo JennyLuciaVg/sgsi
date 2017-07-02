@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Material Dashboard by Creative Tim</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Material Dashboard CSS    -->
+    <link href="../assets/css/material-dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div class="wrapper">
+	    <div class="sidebar" data-color="red" data-image="../assets/img/sidebar-1.jpg">
+			<!--
+	        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+		    Tip 2: you can also add an image using data-image tag
+
+			-->
+
+			<div class="logo">
+				<a class="simple-text">
+					<img src="../../images/bn.png" class="img-responsive" width="180px" style="margin-left: 26px;">
+				</a>
+			</div>
+
+
+	    	<div class="sidebar-wrapper">
+	            <ul class="nav">
+	                <li>
+	                    <a href="ingreso_activos.html">
+	                        <i class="material-icons">dashboard</i>
+	                        <p>Ingreso de Activos</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="modifica_activos.html">
+	                   		<i class="material-icons">library_books</i>
+	                        <p>Modificación de Activos</p>
+	                    </a>
+	                </li>
+	                <li class="active">
+	                    <a href="table.html">
+	                        <i class="material-icons">content_paste</i>
+	                        <p>Asignar Riesgo</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a>
+	                        <i class="material-icons">person</i>
+	                        <p>Cerrar Sesión</p>
+	                    </a>
+	                </li>
+	            </ul>
+	    	</div>
+		</div>
+
+	    <div class="main-panel">
+			<nav class="navbar navbar-transparent navbar-absolute">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!--a class="navbar-brand" href="#">Profile</a-->
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">dashboard</i>
+									<p class="hidden-lg hidden-md">Dashboard</p>
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">notifications</i>
+									<span class="notification">5</span>
+									<p class="hidden-lg hidden-md">Notifications</p>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Notificación 1</a></li>
+									<li><a href="#">Notificación 2</a></li>
+									<li><a href="#">Notificación 3</a></li>
+									<li><a href="#">Notificación 4</a></li>
+									<li><a href="#">Notificación 5</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+	 							   <i class="material-icons">person</i>
+	 							   <p class="hidden-lg hidden-md">Profile</p>
+	 						   </a>
+							</li>
+						</ul>
+
+						<form class="navbar-form navbar-right" role="search">
+							<div class="form-group  is-empty">
+	                        	<input type="text" class="form-control" placeholder="Search">
+	                        	<span class="material-input"></span>
+							</div>
+							<button type="submit" class="btn btn-white btn-round btn-just-icon">
+								<i class="material-icons">search</i><div class="ripple-container"></div>
+							</button>
+	                    </form>
+					</div>
+				</div>
+			</nav>
+
+	        <div class="content">
+	            <div class="container-fluid">
+	                <div class="row">
+
+	                </div>
+	                <div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="card card-nav-tabs">
+								<div class="card-header" data-background-color="red">
+									<div class="nav-tabs-navigation">
+										<div class="nav-tabs-wrapper">
+											<!--span class="nav-tabs-title">Tasks:</span-->
+											<ul class="nav nav-tabs" data-tabs="tabs">
+												<li class="active">
+													<a id="ptr" data-toggle="tab">
+														<i class="material-icons">bug_report</i>
+														PTR
+													<div class="ripple-container"></div></a>
+												</li>
+												<li class="">
+													<a href="#messages" data-toggle="tab">
+														<i class="material-icons">code</i>
+														Métrica
+													<div class="ripple-container"></div></a>
+												</li>
+												<li class="">
+													<a href="#settings" data-toggle="tab">
+														<i class="material-icons">cloud</i>
+														MR
+													<div class="ripple-container"></div></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="content-activo" class="col-md-12">
+								<div class="col-md-12">
+								<div class="col-md-6 text-center">
+			                    <form class="navbar-form" role="search">
+									<div class="form-group  is-empty">
+			                        	<input type="text" class="form-control" placeholder="Buscar por Categoría">
+			                        	<span class="material-input"></span>
+									</div>
+									<button type="submit" class="btn btn-white btn-round btn-just-icon">
+										<i class="material-icons">search</i><div class="ripple-container"></div>
+									</button>
+			                    </form>
+			                    </div>
+			                    <div class="col-md-6 text-center">
+			                    <form class="navbar-form " role="search">
+									<div class="form-group  is-empty">
+			                        	<input type="text" class="form-control" placeholder="Buscar por Tipo">
+			                        	<span class="material-input"></span>
+									</div>
+									<button type="submit" class="btn btn-white btn-round btn-just-icon">
+										<i class="material-icons">search</i><div class="ripple-container"></div>
+									</button>
+			                    </form>
+			                    </div>
+			                    </div>
+			                        <div class="card">
+			                            <div class="card-content table-responsive">
+			                                <table class="table">
+			                                	<thead class="text-danger">
+					                                <th>Valor</th>
+					                                <th>Código</th>
+					                                <th>Nombre</th>
+					                                <th>Descripcion</th>
+					                                <th>Propuesta</th>
+					                                <th>Tipo</th>
+					                                <th>Categoría</th>
+					                                <th>Vulnerabilidad</th>
+					                                <th>Amenazas</th>
+					                                <th>F</th>
+					                                <th>I</th>
+					                                <th>Valoración</th>
+					                                <th>Controles</th>
+					                            </thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>SA01</td>
+														<td>qwe</td>
+														<td>qwe qwe</td>
+														<td>Admi	n 1</td>
+														<td>Software</td>
+														<td>Aplicaciones</td>
+														<td>No se realiza el cambio...</td>
+														<td>Ingreso al correo...</td>
+														<td>
+															<select id="select_freq_1" oninput="getValoracion(this)">
+																<option value="5">Casi Cierta</option>
+																<option value="4">Muy Probable</option>
+																<option value="3">Probable</option>
+																<option value="2">Poco Probable</option>
+																<option value="1" selected>Rara Vez</option>
+															</select></td>
+														<td>
+															<select id="select_impa_1" oninput="getValoracion(this)">
+																<option value="1">Insignificante</option>
+																<option value="2">Menor</option>
+																<option value="3" selected>Moderado</option>
+																<option value="4">Mayor</option>
+																<option value="5">Catastrófico</option>
+															</select></td>
+														<td id="valoracion_1">Bajo</td>
+														<td>Mensualmente cambiar...</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>HE02</td>
+														<td><p>asd</p></td>
+														<td><p>asd asd</p></td>
+														<td><p>Admin 3</p></td>
+														<td><p>Hardware</p></td>
+														<td><p>Equipos</p></td>
+														<td>No sean los correctos</td>
+														<td>Las pruebas se realiza...</td>
+														<td>
+															<select id="select_freq_2" onchange="getValoracion(this)">
+																<option value="5">Casi Cierta</option>
+																<option value="4">Muy Probable</option>
+																<option value="3">Probable</option>
+																<option value="2">Poco Probable</option>
+																<option value="1" selected>Rara Vez</option>
+															</select></td>
+														<td>
+															<select id="select_impa_2" onchange="getValoracion(this)">
+																<option value="1">Insignificante</option>
+																<option value="2" selected>Menor</option>
+																<option value="3">Moderado</option>
+																<option value="4">Mayor</option>
+																<option value="5">Catastrófico</option>
+															</select></td>
+														<td id="valoracion_2">Moderado</td>
+														<td>Verificar los elementos...</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>RP03</td>
+														<td><p>zxc</p></td>
+														<td><p>zxc zxc</p></td>
+														<td><p>Admin 2</p></td>
+														<td><p>RR.HH.</p></td>
+														<td><p>Personal</p></td>
+														<td>Los datos no son correctos</td>
+														<td>Los usuarios no dan...</td>
+														<td>
+															<select id="select_freq_3" onchange="getValoracion(this)">
+																<option value="5" selected>Casi Cierta</option>
+																<option value="4">Muy Probable</option>
+																<option value="3">Probable</option>
+																<option value="2">Poco Probable</option>
+																<option value="1">Rara Vez</option>
+															</select></td>
+														<td>
+															<select id="select_impa_3" onchange="getValoracion(this)">
+																<option value="1">Insignificante</option>
+																<option value="2">Menor</option>
+																<option value="3">Moderado</option>
+																<option value="4">Mayor</option>
+																<option value="5" selected>Catastrófico</option>
+															</select></td>
+														<td id="valoracion_3">Bajo</td>
+														<td>Traer data actual...</td>
+													</tr>
+												</tbody>
+											</table>
+											
+			                            </div>
+			                        </div>
+	                    		</div>
+
+								<div id="content-ptr" class="card-content">
+									<div class="tab-content">
+										<div class="tab-pane active" id="profile">
+											<div class="card">
+												<div class="card-content table-responsive">
+					                                <table class="table table-hover">
+					                                    <thead class="text-warning">
+					                                        <th>ID</th>
+					                                    	<th>Name</th>
+					                                    	<th>Salary</th>
+					                                    	<th>Country</th>
+					                                    </thead>
+					                                    <tbody>
+					                                        <tr>
+					                                        	<td>1</td>
+					                                        	<td>Dakota Rice</td>
+					                                        	<td>$36,738</td>
+					                                        	<td>Niger</td>
+					                                        </tr>
+					                                        <tr>
+					                                        	<td>2</td>
+					                                        	<td>Minerva Hooper</td>
+					                                        	<td>$23,789</td>
+					                                        	<td>Curaçao</td>
+					                                        </tr>
+					                                        <tr>
+					                                        	<td>3</td>
+					                                        	<td>Sage Rodriguez</td>
+					                                        	<td>$56,142</td>
+					                                        	<td>Netherlands</td>
+					                                        </tr>
+					                                        <tr>
+					                                        	<td>4</td>
+					                                        	<td>Philip Chaney</td>
+					                                        	<td>$38,735</td>
+					                                        	<td>Korea, South</td>
+					                                        </tr>
+					                                    </tbody>
+					                                </table>
+					                            </div>
+					                            
+					                        </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="../assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
+	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/js/material.min.js" type="text/javascript"></script>
+
+	<!--  Charts Plugin -->
+	<script src="../assets/js/chartist.min.js"></script>
+
+	<!--  Notifications Plugin    -->
+	<script src="../assets/js/bootstrap-notify.js"></script>
+
+	<!--  Google Maps Plugin    -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<!-- Material Dashboard javascript methods -->
+	<script src="../assets/js/material-dashboard.js"></script>
+
+	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+	<script src="../assets/js/demo.js"></script>
+
+	<script type="text/javascript">
+    	$(document).ready(function(){
+    		$("#content-ptr").hide();
+    		$("#content-activo").show();
+    		$("#ptr").click(function(){
+    			$("#content-ptr").show();
+    			$("#content-activo").hide();
+    		});
+
+			// Javascript method's body can be found in assets/js/demos.js
+        	demo.initDashboardPageCharts();
+
+    	});
+	</script>
+	<script>
+	function getValoracion(node) {
+		var i = node.parentNode.parentNode.rowIndex;
+		var frequencia = document.getElementById("select_freq_"+i).value;
+		var impacto = document.getElementById("select_impa_"+i).value;
+		var v = parseInt(frequencia) * parseInt(impacto);
+		var valoracion;
+		if(v <= 6) {
+			valoracion = "Bajo";
+		}else if(v <= 16) {
+			valoracion = "Moderado";
+		}else if(v <= 25) {
+			valoracion = "Alto";
+		}
+		//valoracion += " " + v;
+		document.getElementById("valoracion_"+i).innerHTML = valoracion;
+	}
+	</script>
+
+</html>
